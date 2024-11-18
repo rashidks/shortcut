@@ -1,0 +1,84 @@
+/* Container styling */
+.auth-container {
+    perspective: 1000px;
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+  }
+  
+  .auth-card {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .auth-card.rotate {
+    transform: rotateY(180deg);
+  }
+  
+  /* Face styling */
+  .auth-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .signup-face {
+    background: #f9f9f9;
+  }
+  
+  .signin-face {
+    background: #d1e7ff;
+    transform: rotateY(180deg);
+  }
+  
+  /* Form elements */
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .link:hover {
+    color: #0056b3;
+  }
+  
+  
